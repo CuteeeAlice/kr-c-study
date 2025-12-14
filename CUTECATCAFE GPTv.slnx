@@ -1,7 +1,66 @@
-<Solution>
-  <Configurations>
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Project Path="CUTECATCAFE GPTv/CUTECATCAFE GPTv.vcxproj" />
-</Solution>
+#include <stdio.h>
+#include <string.h>
+
+#define ICE_PRICE 1000
+#define SHOT_PRICE 500
+
+enum Menu {
+    AMERICANO = 1,
+    LATTE,
+    MOCA
+};
+
+void print_menu(void) {
+    printf("=== MENU ===\n");
+    printf("1. HOT AMERICANO 2000원\n");
+    printf("2. HOT LATTE     3000원\n");
+    printf("3. HOT MOCA      4000원\n");
+    printf("ICE 변경 시 +1000원\n");
+    printf("============\n");
+}
+
+int get_base_price(int menu) {
+    switch (menu) {
+    case AMERICANO: return 2000;
+    case LATTE:     return 3000;
+    case MOCA:      return 4000;
+    default:        return -1;
+    }
+}
+
+int main(void) {
+    int menu, ice;
+    int price;
+    char drink[20];
+    char temp[10] = "HOT";
+
+    print_menu();
+
+    printf("메뉴 번호 입력: ");
+    scanf("%d", &menu);
+
+    printf("ICE면 1, 아니면 0 입력: ");
+    scanf("%d", &ice);
+
+    price = get_base_price(menu);
+    if (price == -1) {
+        printf("없는 메뉴입니다.\n");
+        return 0;
+    }
+
+    if (ice == 1) {
+        strcpy(temp, "ICE");
+        price += ICE_PRICE;
+    }
+
+    switch (menu) {
+    case AMERICANO: strcpy(drink, "AMERICANO"); break;
+    case LATTE:     strcpy(drink, "LATTE");     break;
+    case MOCA:      strcpy(drink, "MOCA");      break;
+    }
+
+    printf("%s %s 준비 중입니다.\n", temp, drink);
+    printf("총 금액: %d원\n", price);
+
+    return 0;
+}
