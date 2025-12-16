@@ -1,4 +1,4 @@
-# 💻🐱 엘리스의 깃허브 안내문 Alice’s GitHub Guide 🐱💻
+# 💻🐱 엘리스의 깃허브 안내문 | Alice’s GitHub Guide 🐱💻
 
 1. 📁 `01-*******, 02-********` 등의 이름을 가진 폴더명은  
    C언어를 배우며 만들어본 예제의 **순서**입니다.
@@ -15,7 +15,7 @@ with new versions added as ver.1, ver.2, and so on.
 
 
 3. 🌱 공유한 예제들은 **초보자가 만든 코드 예제**로,  
-   공공의 목적 또는 **상업적 이용도 자유롭게 사용**하셔도 됩니다.
+   공공의 목적 또는 **상업적 이용 모두 자유롭게 사용**하셔도 됩니다.
 
 🌱 The shared examples are beginner-level code,
 and may be freely used for both public and commercial purposes.
