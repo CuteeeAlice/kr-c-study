@@ -16,6 +16,7 @@
    **대단히 감사합니다!** (_ _)
 
 Alice’s GitHub Guide 🐱💻
+
 📁 Folder names such as 01-*****, 02-*****, etc.
 represent the order of examples I created while learning C.
 
