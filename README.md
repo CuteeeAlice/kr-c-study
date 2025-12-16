@@ -21,8 +21,7 @@ with new versions added as ver.1, ver.2, and so on.
 and may be freely used for both public and commercial purposes.
 
 
-4. 🏷️ 출처 표기를 해주시면 감사하겠지만,  
-   **꼭 하지 않으셔도 괜찮아요.** (부끄러워요.. 🙈)
+4. 🏷️ 출처 표기를 해주시면 감사하겠지만, **꼭 하지 않으셔도 괜찮아요.** (부끄러워요.. 🙈)
 
 🏷️ Credit is appreciated,
 but not required. (I’m a bit shy.. 🙈)
