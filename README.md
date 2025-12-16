@@ -27,8 +27,7 @@ and may be freely used for both public and commercial purposes.
 but not required. (I’m a bit shy.. 🙈)
 
 
-6. 🙇‍♀️ 여기까지 읽어주셔서  
-   **대단히 감사합니다!** (_ _)
+6. 🙇‍♀️ 여기까지 읽어주셔서 **대단히 감사합니다!** (_ _)
 
 🙇‍♀️ Thank you very much for taking the time to read this. (_ _)
 
