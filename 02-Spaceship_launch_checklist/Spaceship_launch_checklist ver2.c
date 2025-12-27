@@ -7,6 +7,7 @@ int main() {
     char ready;
     char start;
     char start1;
+    char start2;
 
     printf("=====================================================\n");
     printf("   CUTE ALICE SPACE INDUSTRIES - OFFICIAL TERMINAL\n");
@@ -135,9 +136,30 @@ int main() {
         return 0;
     }
 
+    printf("우주선을 진짜 정말로 출발하시겠습니까? (y/n) "); // 그만 좀 물어!
+    scanf(" %c", &start2);
+    Sleep(3000);
+
+    if (start2 == 'n' || start2 == 'N') {
+        printf("우주선을 출발하지 않습니다.\n");
+        Sleep(2000);
+        return 0;
+    }
+    else if (start2 == 'y' || start2 == 'Y') {
+        printf("우주선이 진짜 정말로 출발합니다.\n");
+        printf("잠시만 기다려주세요.\n");
+        Sleep(3000);
+    }
+    else {
+        printf("잘못된 입력입니다\n");
+        return 0;
+    }
+    
+    // =========== 진짜출발 ============
+    // =================================
     for (int count = 10; count >= 0; count--) {
         if (count == 10) {
-            printf("팟팟팟...\n");
+            printf("팟팟팟...\n"); // 엔진점화 사운드
             Sleep(1000);
             printf("엔진점화!\n");
             Sleep(2000);
@@ -145,33 +167,41 @@ int main() {
             Sleep(1000);
             printf("%d!\n", count);
         }
-        else if (count > 0) {
+        else if (count > 0) { // 우주선 카운트 다운!
             printf("%d!\n", count);
             Sleep(1000);
         }
         else {
             printf("0!\n");
             Sleep(500);
-            printf("쿠오오오오오!!!\n");
+            printf("쿠오오오오오!!!\n"); // 우주선 이륙 사운드!
             Sleep(1800);
             printf("푸슈슈슈슈슛!!!\n");
             Sleep(2300);
-            printf("푸슈우우우우!!!\n");
+            printf("푸슈우우우우!!!\n"); // 오오오오올라간다!!!
             Sleep(1300);
-            printf("팟!\n");
+            printf("팟!\n"); // 우주선 엔진꺼지는 사운드
             Sleep(3000);
-            printf("쾅!\n");
+            printf("쾅!\n"); // 우주선 바닥에 부딪히는 사운드
             Sleep(4000);
         }
     }
 
     for (int fail = 0; fail <= 6; fail++) {
-        printf("콰아아앙퍼어어어엉!!\n");
+        printf("콰아아앙퍼어어어엉!!\n"); // 우주선 폭발 사운드
         Sleep(600);
     }
     Sleep(2000);
-    printf("으앙쥬금!!\n");
+    printf("으앙쥬금!!\n"); // 우주선 폭발해서 쥬금!
     Sleep(1000);
 
     return 0;
 }
+
+
+// 영어멘트는 gpt에게 전부 도움 받았고 97%는 제가 전부다 코드를 작성하고 나머지 3%..
+// 세미콜론 빠진거나 오타난 것들 gpt를 통해 검수받아서 수정했어요
+// 그리고 단순 반복건들은 gpt한테 넣어달라고 했는데...
+// 특히 카운트다운할때 if로 하나씩 10.. 9.. 8.. 넣는거 귀찮아서
+// 10이랑 0만 해놓고 가운데는 너가 채워줘 했더니 꼼수를 써버렸어욬ㅋㅋㅋ....
+// 근데 또 저렇게도 할 수 있구나를 배워서 수정하지 않고 그냥 사용하기로 결정..!
