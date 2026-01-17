@@ -23,192 +23,238 @@ Because of this, all code in this repository
 may carry some **resonance (or “aftertaste”)**  
 of my conversations with my ChatGPT teacher.
 
-// C Language Study Log
+// Record from 2025.12.15 ~ 2025.12.16.
 
-// Reason for starting C.
-// While casually talking with GPT about worldbuilding and philosophy,
-// we somehow ended up talking about the C language.
-// Through that conversation, I began to understand the concept of C.
+// I learned about struct and for.
+// Struct was easy to understand.
+// I had often thought,
+// “It’s annoying to define things one by one—
+// wouldn’t it be nice if I could do it all at once?”
 //
-// I understood C as something like unassembled LEGO blocks.
-// Compared to languages like Python or Java, which use the same LEGO concept,
-// C is like having only the most basic 2-stud blocks,
-// yet being able to create infinite possibilities with them.
-// Python and Java, on the other hand, feel like languages that provide
-// 3-stud blocks, L-shaped blocks, square blocks, circular blocks, etc.,
-// allowing you to build many things with fewer, more specialized pieces.
+// When I saw code that lets you group definitions
+// that share the same meaning but have different values,
+// I understood it almost immediately.
+// The syntax itself wasn’t particularly complicated.
+// It felt like:
+// first, you create a template with struct,
+// then later you just define things using that template.
 //
-// In the end, the essence of programming is the same:
-// using a computer language to create something.
-// The difference is whether you build everything yourself,
-// or rely on parts that many people commonly use,
-// which are already defined to make things more convenient.
+// The downside is that variable names get very long.
+// Typing them can be tiring.
+// For very simple cases it’s fine,
+// but when both the template name and the variable names inside it are long,
+// you sometimes end up accessing things like
+// aaaaaaaaaa.bbbbbbbb,
+// which can be annoying.
+// Other than that, it feels very good.
+// I haven’t made an example using struct yet,
+// but if an idea comes up, I plan to try it right away.
 
-// After many days passed, I was playing a game and happened to see
-// a Discord server template.
-// It felt a bit empty with just the template, so I thought,
-// “What if I add a bot?”
+// I learned for loops,
+// but I still don’t quite have a clear sense of how to use them.
 //
-// With GPT’s help, I successfully created and deployed
-// a Discord music bot using Python.
-// During that process, even though I didn’t fully understand the code,
-// I started to infer its structure by reading the comments.
-// Breaking the code down into natural language made me think,
-// “Wow, this is actually fun.”
+// for(int a = 0; a >= 10; a++)
 //
-// The reason I chose C instead of continuing with Python was this:
-// I don’t plan to become a professional developer,
-// so did I really need to deeply learn Python?
-// Python is convenient in daily life, and there are many situations
-// where it would be useful,
-// but most things I need aren’t very complex.
-// Those can be handled with AI.
-// What I really wanted was to understand the fundamentals,
-// so I chose C.
+// I definitely learned this,
+// but because I stopped studying that day before it fully clicked,
+// I ended up forgetting it.
+// At this point, I can’t translate it into natural language anymore.
+// I’ll need to relearn this part,
+// but for now, I honestly don’t really understand it…ㅠ
 
-// From here, I began learning C.
-// The very first step was translating the following code line by line.
+// The reason I hadn’t been making many examples
+// was that I kept running into syntax mistakes while writing code.
+// Not simple typos like missing semicolons, quotation marks, commas,
+// or mistyping printf / scanf,
+// but actual grammar mistakes.
+// Even though these were things I had already learned,
+// I kept thinking,
+// “Was this how it worked?”
+// “Is this how you write it?”
+// So for now, I’m focusing mainly on practicing syntax.
 
-#include <stdio.h> // stdio.h is a header.
-// In natural language, I think of it as a toolbox that contains tools.
-// To use the printf tool, I include the stdio toolbox
-// using the include command.
-
-int main() { // This opens a space called main using {}.
-// Inside this space, I define what main should do.
-
-    printf("hello world");
-    // printf is a command that tells the program to output something.
-    // The contents inside the parentheses are what should be printed.
-    // Quotation marks and commas are used to explain how the output should look.
-    // The semicolon acts like a period at the end of a sentence.
-
-    return 0;
-    // This signals normal termination.
-    // Return can be used in many ways, and it does more than just this,
-    // but for now, I understand and use it only as a normal exit signal.
-    // Even though I don’t fully understand return values yet,
-    // I decided to use it anyway to complete the code.
-    // Once I understand it properly,
-    // I plan to experiment with non-zero values like return 1.
-}
-
-// By translating the code above into natural language line by line,
-// I began to understand what each part of the code does
-// and started using it based on that understanding.
-// Usually, people first learn what C is and what its purpose is,
-// and then learn this code,
-// but since I already had a rough sense of what C is,
-// I jumped straight into coding examples.
-
-// While translating examples into natural language,
-// I repeatedly asked the AI whether my understanding was correct,
-// going through a process of continuous correction.
-
-// The above is the record up to 2025.12.12.
-
-// From the basics, I learned that int is used to define integers.
-// Although it can have other meanings,
-// so far I mainly use int to define integers
-// and when opening and closing the main function.
-// I learned that char is used to define characters,
-// and that using [] allows strings.
-// I also learned that characters use single quotes,
-// while strings use double quotes.
-
-// By learning if statements, I learned about conditions.
-// I learned how to use symbols like >, <, ==, >=, <=, !=
-// as well as else if and else.
-// However, I can currently only implement simple cases.
-// I know that I should eventually be able to handle complex structures
-// like if inside if inside if,
-// but I’m not used to it yet.
-// I plan to get comfortable with this gradually
-// by creating many examples.
-
-// I learned about scanf,
-// but for now I only know how to use it to read integers.
-
-// int a;
-// scanf("%d", &a);
-
-// I can only use it at about this level,
-// and using it in more complex expressions like
-// if(scanf(printf(if ...))) is still difficult for me.
-
-// The CUTECATCAFE example was created by thinking about
-// how to combine what I had learned so far into a single program.
-// I typed the code in MS Visual Studio,
-// ran build simulations with GPT to catch mistakes
-// like missing semicolons or quotation marks,
-// then built it directly in MSVS,
-// confirmed that it worked correctly,
-// and finally uploaded it to GitHub.
-
-// When getting feedback from GPT,
-// my understanding of concepts often expanded.
-// I accepted and applied those concepts directly to my code.
-// However, I never used code that I hadn’t learned yet
-// or didn’t understand why it worked.
-
-// GPT often suggests code using things like char*,
-// int main(void), or void,
-// which I have seen before but don’t fully understand.
-// I deliberately chose not to use those.
-
-// Record from 2025.12.12 ~ 2025.12.14.
-
-// I wanted to read a novel,
-// but coding in C was so fun that I couldn’t focus on the book...
-// I told myself I’d stop coding and read,
-// lay down on my bed, read a couple of pages,
-// then suddenly thought,
-// “This might work as if(){ if()... }”
+// Especially when nesting if statements twice in a row,
+// my intended logic is clear in my head,
+// but the braces make everything extremely confusing.
+// A compiler would probably format the braces with tabs,
+// making things easier to read,
+// so the confusion would be less.
+// Right now, though, I’m not in a situation
+// where I need to build and run code immediately,
+// so I’m often just typing in a text editor or directly in an AI app.
+// Still, if I want to get used to a compiler,
+// I probably should just keep coding in one.
+// I’m not sure.
 //
-// I thought, “Should I try it?”
-// sat back down at my computer,
-// and started writing code step by step with GPT.
-// And it worked...ㅠ
-
-// In the spaceship launch checklist,
-// I tried nesting if statements by myself for the first time,
-// without directly relying on GPT.
-// After finishing the code, I thought,
-// “Wait… if the conditions aren’t met, nothing gets printed.”
+// For now, my immediate goals are:
+// being able to write 30 nested if statements at once without syntax errors,
+// and practicing by replacing variable names and contents with “...”
+// just to focus on grammar.
+// Something like:
 //
-// I felt like it should display something,
-// so I started writing if(condition where one or the other is false).
-// GPT then told me that my if statement hadn’t ended yet,
-// so it shouldn’t be another if, but an else.
+// int ...;
+// char ...;
+// printf(...);
+// if(...) { printf(...); }
+// else if(...) { ... }
+// else { ... }
 //
-// I looked at my code again and realized
-// it ended as if → if → else → return.
-// “Oh… that’s true.”
-// But then I struggled to figure out
-// which closing brace the else should attach to.
-// With nested ifs, everything got confusing.
-// I spent a long time thinking about it…ㅠ
-// Then I thought, “What if I just try putting it here?”
-// I added else { printf(...) },
-// and when it built successfully, I literally shouted.
-
-// That took exactly one hour.
-// Since I’ve now used nested if statements,
-// the structure still doesn’t jump out at me immediately,
-// so for a while I plan to make similar examples
-// until the structure becomes familiar.
-
-// Previously, I defined integers with different values
-// using separate variable names.
-// GPT taught me that variables with the same meaning
-// but different values can be defined like this:
+// I plan to keep practicing like this,
+// leaving the content empty
+// and focusing only on correct structure.
 //
-// int price[3] = {1000, 2000, 3000};
-//
-// and that they can be accessed starting from price[0],
-// then [1], [2], and so on.
+// Record from 2025.12.17 ~ 2025.12.19.
 
-// Now I feel really happy knowing that
-// I can write cleaner code
-// for variables that share the same meaning
-// but have different values.
+// I didn’t do much for a while because I felt lazy.
+// It’s not that I did nothing at all,
+// but I mostly just rewrote code I had already learned,
+// practicing so that I wouldn’t make mistakes when writing syntax.
+// Even so, I still forget semicolons
+// and leave out quotation marks.
+// GPT says these are mistakes every developer makes,
+// but I still want to reduce how often they happen.
+// So I kept practicing grammar,
+// and didn’t really learn anything new.
+
+// As nested if statements kept appearing,
+// GPT introduced switch.
+// It didn’t seem very difficult,
+// so I tried learning it.
+// It definitely feels very convenient in certain situations,
+// but I also felt that those situations
+// don’t come up very often.
+// Even when ordering at a café,
+// you usually say the menu name,
+// not the menu number.
+// Still, I tried using switch
+// to refactor or rewrite some of my existing code,
+// and it turned out pretty well.
+
+// I tried a bit harder to understand for loops.
+// As a result, I now have a rough sense of how to use them.
+// I also learned how to store integer values inside a for loop,
+// which felt extremely useful.
+// That said, since the syntax still isn’t fully familiar,
+// I feel like I’ll definitely make syntax mistakes
+// the next time I try to use it.
+
+// While building and running code,
+// everything happens so instantly
+// that it started to feel a bit unnatural.
+// I thought,
+// “What if I add delays between certain branches?”
+//
+// That led me to discover Sleep in the Windows header.
+// As expected, I ran into an error
+// because I used a lowercase s instead of an uppercase S.
+// GPT told me that this is a very common mistake
+// when using OS functions for the first time.
+// Learning new headers still feels burdensome,
+// but Sleep was very simple to use,
+// so I understood it almost immediately.
+// For now, I plan to focus again on grammar practice
+// to really make everything I’ve learned my own.
+//
+// Record from 2025.12.26.
+
+// Over the past 3–4 weeks,
+// I worked through input/output, operations,
+// conditionals, loops, and array problems
+// on Baekjoon and Programmers.
+// I learned a lot of different things.
+//
+// What confused me about Baekjoon was that
+// some array problems were accepted
+// even if I didn’t actually use arrays.
+// Out of curiosity, I tried solving other problems
+// by producing the correct output
+// without using the required functions,
+// but those weren’t accepted.
+//
+// That made me realize that,
+// at the learning stage,
+// as long as I can produce the correct result
+// for the program’s purpose,
+// whether I hard-code it
+// or take a completely unconventional approach
+// doesn’t matter much for my mental health.
+// It is kind of funny to reach the correct answer
+// through a strange process instead of the standard one,
+// but I also thought that it might give people
+// who only follow textbook solutions
+// a realization like,
+// “Oh, you can solve it this way too.”
+//
+// So I decided that,
+// just like I’ve been doing so far,
+// I’ll first focus on producing the required output in my own way,
+// then compare it with the standard approach
+// and learn from that.
+// I keep saying this,
+// but since I’m learning C as a hobby,
+// I’ll continue studying in whatever way feels fun.
+
+// What I learned over those 3–4 weeks:
+//
+// In the IDE, I kept running into VLA issues,
+// so I had no choice but to learn
+// how to create arrays using malloc.
+
+// I gained a vague understanding of pointers.
+// It’s not perfect.
+// I could be wrong.
+
+// I tried separating logic.
+// Previously, I put all code inside int main
+// and built it that way.
+// This time, I separated things like view (presentation)
+// and print (output),
+// and then called view and print from main.
+
+// I learned about function parameters.
+// When looking at other people’s code,
+// I often saw things like main(void),
+// or parameters like int x or char* y[],
+// and I was curious about
+// what you could actually do with parameters.
+//
+// After asking GPT and Gemini for a long time,
+// I finally understood.
+// The reason it took me so long
+// was that I had always run code
+// through compile → build in the IDE.
+// To use function parameters,
+// you need to pass them when executing the file directly in the terminal.
+// Even when the AIs explained it,
+// I couldn’t understand for a long time.
+//
+// If a future beginner asks
+// why function parameters exist,
+// I think the first thing that needs explaining
+// isn’t what function parameters are,
+// but the difference between
+// running code via IDE build
+// and directly executing an EXE file.
+
+// Subjectively, I think my learning progress looks like this:
+// Loops: absolute beginner → lower-intermediate
+// Conditionals: absolute beginner → lower-intermediate
+// Arrays: absolute beginner of beginners → absolute beginner
+//
+// My definition of learning stages:
+// knows nothing <
+// [absolute beginner of beginners, absolute beginner, beginner, lower-intermediate] <
+// intermediate < advanced < expert <<< hacker
+
+// What I’ll probably practice next:
+// getting comfortable using function parameters naturally;
+// using loops and conditionals
+// with more natural logical structures;
+// and studying pointers deeply enough
+// that I can explain what they are in detail,
+// not just vaguely.
+//
+// Anyway!!
+// There’s still so, so much to learn…
+//
+// Record from 2026.01.18.
