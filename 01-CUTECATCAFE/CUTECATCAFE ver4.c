@@ -228,21 +228,21 @@ void ment() {
             if (select == 1) {
                 if (i % 2 == 0) {
                     printf(" │        /\\___/\\                  │\n");
-                    printf(" │       ( > _ o )  고맙다냥!!     │\n");
+                    printf(" │       ( > _ o )  고맙다냥!!     │\n"); // thanks!
                 }
                 else {
                     printf(" │        /\\___/\\                  │\n");
-                    printf(" │       ( o _ < )  꺄아아아앙!!   │\n");
+                    printf(" │       ( o _ < )  꺄아아아앙!!   │\n"); // kyaaaaaa!!
                 }
             }
             else if (select == 2) {
                 if (i % 2 == 0) {
                     printf(" │        /\\___/\\                  │\n");
-                    printf(" │       ( ^ o = )  부끄럽다냥!!   │\n");
+                    printf(" │       ( ^ o = )  부끄럽다냥!!   │\n"); // i'm so shy!!
                 }
                 else {
                     printf(" │        /\\___/\\                  │\n");
-                    printf(" │       ( = o ^ )  에헤헤헤냥!!   │\n");
+                    printf(" │       ( = o ^ )  에헤헤헤냥!!   │\n"); // ehhhhh!!
                 }
             }
             printf(" │       |       |                 │\n");
@@ -279,8 +279,8 @@ void toktok() {
     system("cls");
     intro();
     printf(" ┌─────────────────────────────────┐\n");
-    printf(" │  사장님이 골골송을 부른다냥!    │\n");
-    printf(" │         ~ 갸르릉 갸르릉 ~       │\n");
+    printf(" │   사장님이 골골송을 부른다냥!   │\n");
+    printf(" │          ~ 갸르릉 갸르릉 ~      │\n");
     printf(" └─────────────────────────────────┘\n");
     // The owner is purring! (Happy kitty, happy life!)
     Sleep(2000);
@@ -292,9 +292,23 @@ int main() {
     srand(time(NULL));
     int number;
 
-    intro();
-    printf("\n  ---------- 어서오라냥!! ---------- \n"); // welcome!! (Kitty's welcoming dance!)
-    Sleep(3000);
+    for (int i = 0; i < 4; i++) {
+        intro();
+        printf(" ┌─────────────────────────────────┐\n");
+        if (i % 2 == 0) {
+            printf(" │         /\\_____/\\   어서오라냥! │\n");
+            printf(" │        (  > w <  )  어서오라냥! │\n");
+            printf(" │         )      (      ♥        │\n");
+        }
+        else {
+            printf(" │         /\\_____/\\   어서오라냥! │\n");
+            printf(" │        (  ^ w ^  )  어서오라냥! │\n");
+            printf(" │         )      (      ★        │\n");
+        }
+        printf(" └─────────────────────────────────┘\n");
+        // welcome!! (Kitty's welcoming dance!)
+        Sleep(800);
+    }
 
     while (1) {
         choice();
