@@ -18,34 +18,48 @@ void intro() {
 void choice() {
     intro();
     printf("\n");
-    printf("1. 메뉴보기\n");        // [View menu] Let's see our tasty treats!
-    printf("2. 사장님 칭찬하기\n"); // [Compliment the owner] Tell the kitty owner how lovely they are!
-    printf("3. 사장님 쓰다듬기\n"); // [Pet the owner] Fluffy petting time is the best time!
-    printf("4. 주문하기\n");        // [Order drinks] I'm thirsty for some kitty coffee!
-    printf("0. 카페 나가기\n\n");  // [Exit the cafe] See you in my dreams, meow!
+    printf(" ┌──────────────────────────┐\n"); // Box start! (Let's see the menu)
+    printf(" │    1. 메뉴보기           │\n"); // 1. View menu (Discover yummy drinks!)
+    printf(" │    2. 사장님 칭찬하기    │\n"); // 2. Compliment the owner (Make me purr!)
+    printf(" │    3. 사장님 쓰다듬기    │\n"); // 3. Pet the owner (Fluffy headpats please!)
+    printf(" │    4. 주문하기           │\n"); // 4. Order Now (Get your caffeine fix!)
+    printf(" │    0. 카페 나가기        │\n"); // 0. Leave Cafe (See you soon, meow!)
+    printf(" └──────────────────────────┘\n\n"); // Box end!
 }
 
 // 야옹이 카페 메뉴!
 // [Cat cafe drink menu] Time to pick your favorite drink!
 void menu() {
     intro();
-    printf("    *** 주문할거냥? *** \n\n"); // Would you like to order? (Kitty's waiting!)
-    printf("    1. 아메리카노 3000원\n");    // Americano 3000 won (Bitter but cool!)
-    printf("    2. 카페라떼 4000원\n");      // Cafe Latte 4000 won (Soft as my fur!)
-    printf("    3. 카페모카 5000원\n");      // Cafe Mocha 5000 won (Sweet as chocolate!)
-    printf("    0. 돌아가기\n");             // Go back (Back to the main lobby!)
+    printf("\n");
+    printf(" ┌──────────────────────────┐\n");
+    printf(" │        주문할거냥?       │\n"); // Would you like to order?
+    printf(" ├──────────────────────────┤\n");
+    printf(" │   1. 아메리카노  3000원  │\n"); // Americano 3000 won (Cool and chic!)
+    printf(" │   2. 카페라떼    4000원  │\n"); // Cafe Latte 4000 won (So fluffy!)
+    printf(" │   3. 카페모카    5000원  │\n"); // Cafe Mocha 5000 won (Sweet chocolate!)
+    printf(" ├──────────────────────────┤\n");
+    printf(" │   0. 돌아가기            │\n"); // Go back (Returning to lobby...)
+    printf(" └──────────────────────────┘\n");
 }
+
 
 // 야옹이 카페 메뉴!
 // [Cat cafe menu board] Just a pretty board for you to look at!
 void menu_order() {
     intro();
-    printf("          *** 메뉴판 ***\n\n");      // [Menu board title] Look at these yummy options!
-    printf("        아메리카노 3000원\n");    // Americano 3000 won
-    printf("         카페라떼 4000원\n");      // Cafe Latte 4000 won
-    printf("         카페모카 5000원\n\n");    // Cafe Mocha 5000 won
-    printf("          0. 돌아가기\n");         // Go back
+    printf("\n");
+    printf(" ┌──────────────────────────┐\n");
+    printf(" │          메뉴판          │\n"); // [Menu board title]
+    printf(" ├──────────────────────────┤\n");
+    printf(" │    아메리카노  3000원    │\n"); // Our best bitter coffee!
+    printf(" │    카페라떼    4000원    │\n"); // Warm milk inside!
+    printf(" │    카페모카    5000원    │\n"); // For chocolate lovers!
+    printf(" ├──────────────────────────┤\n");
+    printf(" │        0. 돌아가기       │\n"); // Go back
+    printf(" └──────────────────────────┘\n\n");
 }
+
 
 // 아메리카노 연출!
 // [Americano making animation] Making magic with black coffee beans!
@@ -142,7 +156,7 @@ void order_menu() {
 // 사장님 칭찬해주기!
 // [Compliment the cafe owner] Making the kitty owner blush!
 void ment() {
-    int sel;
+    int select;
 
     while (1) {
         intro();
@@ -151,39 +165,40 @@ void ment() {
         printf("2. 사장님 너무너무 귀여워용!!\n"); // Owner, you're so cute!! (Stop it, I'm blushing!)
         printf("0. 돌아가기\n\n");                  // Go back
 
-        scanf("%d", &sel);
+        scanf("%d", &select);
 
-        if (sel == 0) break;
+        if (select == 0) break;
 
         int shake = rand() % 6 + 5;
 
         for (int i = 0; i < shake; i++) {
-
+            
+                
             system("cls");
 
-            if (sel == 1) {
-                printf("          /\\___/\\   \n");
-                printf("         ( o ^ o )  [ >_< 꺄아아아아아아아앙!!! 고맙다냥!! ] \n");
-                printf("          |     |   \n");
+            if (select == 1) {
+                printf("           /\\___/\\   \n");
+                printf("          ( o ^ o )  [ > _ < 꺄아아아아아아아앙!!! 고맙다냥!!] \n"); // Kkyaaaaaaaa!! Thanks nya!! (Happy kitty!)
+                printf("           |     |   \n");
             }
-            else if (sel == 2) {
-                printf("          /\\___/\\   \n");
-                printf("         ( = ^ = )  [ >_< 꺄아아아아아아아앙!!! 부끄럽다냥!! ] \n");
-                printf("          |     |   \n");
+            else if (select == 2) {
+                printf("           /\\___/\\   \n");
+                printf("          ( = ^ = )  [ > _ < 꺄아아아아아아아앙!!!부끄럽다냥!!] \n"); // Kkyaaaaaaaa!! I'm so shy nya!! (Blushing kitty!)
+                printf("           |     |   \n");
             }
 
             Sleep(200);
             system("cls");
 
-            if (sel == 1) {
-                printf("          /\\___/\\   \n");
-                printf("         ( ^ o ^ )  [ >_< 꺄아아아아아아아앙!!! 고마다냥!! ] \n");
-                printf("          |     |   \n");
+            if (select == 1) {
+                printf("           /\\___/\\   \n");
+                printf("          ( ^ o ^ )  [ > _ < 꺄아아아아아아아앙!!! 고맙다냥!!] \n"); // Kkyaaaaaaaa!! Thanks nya!! (Happy kitty!)
+                printf("           |     |   \n");
             }
-            else if (sel == 2) {
-                printf("          /\\___/\\   \n");
-                printf("         ( ^ = ^ )  [ >_< 꺄아아아아아아아앙!!! 부끄럽다냥!! ] \n");
-                printf("          |     |   \n");
+            else if (select == 2) {
+                printf("           /\\___/\\   \n");
+                printf("          ( ^ = ^ )  [ > _ < 꺄아아아아아아아앙!!!부끄럽다냥!!] \n"); // Kkyaaaaaaaa!! I'm so shy nya!! (Blushing kitty!)
+                printf("           |     |   \n");
             }
             Sleep(200);
         }
@@ -200,14 +215,14 @@ void toktok() {
         // 흔들흔들 모션연출
         // [Petting motion animation] Swaying back and forth with joy!
         system("cls");
-        printf("          /\\___/\\   \n");
-        printf("         ( - . - )  쓰담쓰담 >_< \n"); // Pat pat (So soft!)
-        printf("          (     )   \n");
+        printf("           /\\___/\\   \n");
+        printf("          ( - . - )  쓰담쓰담 >_< \n"); // Pat pat (So soft!)
+        printf("           (     )   \n");
         Sleep(200);
         system("cls");
-        printf("            /\\___/\\   \n");
-        printf("           ( ^ . ^ )   쓰담쓰담 >_< \n"); // Pat pat (I'm in heaven!)
-        printf("            (     )   \n");
+        printf("             /\\___/\\   \n");
+        printf("            ( ^ . ^ )   쓰담쓰담 >_< \n"); // Pat pat (I'm in heaven!)
+        printf("             (     )   \n");
         Sleep(200);
     }
     printf("\n  -- 사장님이 골골송을 부르고 있다냥! 갸르릉~ --\n");
@@ -267,11 +282,3 @@ int main() {
 
     return 0;
 }
-
-// 새로운 코드를 만들어 볼까~ 하고 만들다보니 또 카페를 만들어보게되었어요...!
-// 전체적 로직설계와 문법구조, 연출부분을 만들고, GPT를 통해 다듬고,
-// 다시 또 개선하다가 막히거나 의도와 다르게 나오는 부분은 GPT를 통해 다시 또 다듬고...
-// 그렇게 전체적으로 완성하는데 4시간?? 쯤 걸린 코드!!!
-// 이제는 코드가 완벽히나 잘은 아니더라도 읽히기는 한다는게 너무너무 신기해여..ㅠㅠㅠㅠㅠ
-
-// 코드 문법은 GPT를 통해서 다듬었구 연출부분은 다 만들고나서 GEMINI를 통해서 귀엽게 다듬었어요!!
