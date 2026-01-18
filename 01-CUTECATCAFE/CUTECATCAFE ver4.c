@@ -282,3 +282,27 @@ int main() {
 
     return 0;
 }
+
+// 새로운 코드를 만들어 볼까~ 하고 만들다보니 또 카페를 만들어보게되었어요...!
+// 전체적 로직설계와 문법구조, 연출부분을 만들고, GPT를 통해 다듬고,
+// 다시 또 개선하다가 막히거나 의도와 다르게 나오는 부분은 GPT를 통해 다시 또 다듬고...
+// 그렇게 전체적으로 완성하는데 4시간?? 쯤 걸린 코드!!!
+// 이제는 코드가 완벽히나 잘은 아니더라도 읽히기는 한다는게 너무너무 신기해여..ㅠㅠㅠㅠㅠ
+// 코드 문법은 GPT를 통해서 다듬었구 연출부분은 다 만들고나서 GEMINI를 통해서 귀엽게 다듬었어요!!
+
+// 배열과 구조체를 사용하지 않은 이유는 manu[2]가 뭐였더라? 하구 다시 찾아서 봐야하기도 하고
+// 배열에 저장할만한게 그렇게 많지 않으니 귀찮아두 하나하나 수정하자! 하고 배열을 안썻구
+// 구조체는 menu.coffe[moca] 이런식으로 타이핑하는게 귀찮아서 그냥 안썻어요...ㅠ
+// 나중에 구조가 커지고 하면 아~ 구조체 안쓰니까 너무 불편하다.. 라고 생각될때쯤에나 쓸꺼같아요!
+
+// While thinking about what to create next, I ended up making a cafe again...!
+// I designed the overall logic and animations myself, then refined them with GPT.
+// Whenever I got stuck, I kept polishing it with GPT until it felt just right!
+// It took me about 4 hours in total to finish this whole project!!!
+// It's so amazing that I can actually read and understand the code now.. T_T
+// GPT helped me with the syntax, and I used Gemini to make the animations extra cute!!
+
+// I skipped arrays because I didn't want to keep checking what "menu[2]" was.
+// Since there wasn't much data, I preferred editing each one manually!
+// I didn't use structs because typing "menu.coffee[mocha]" felt like too much work... T_T
+// I'll probably start using them when I finally feel, "Oh, it's so inconvenient without them!"
