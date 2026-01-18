@@ -69,30 +69,36 @@ void menu_order() {
 void americano() {
     for (int i = 0; i <= 3; i++) {
         intro();
-        printf("      [ 원두 가는 중... ]\n"); // Grinding coffee beans...
-        printf("         /\\___/\\  (사각사각!)\n");
-        printf("        ( > <   ) o  \n");
-        printf("        (  u u  )  \n");
-        Sleep(800);
-
-        intro();
-        printf("      [ 원두 가는 중... ]\n"); // Grinding coffee beans...
-        printf("         /\\___/\\  (냥냥펀치!)\n");
-        printf("        ( > <   )  o\n");
-        printf("        (  u u  )  \n");
+        printf(" ┌─────────────────────────────────┐\n");
+        printf(" │       [ 원두 가는 중... ]       │\n"); // Grinding coffee beans...
+        printf(" │          /\\___/\\  (사각!)       │\n");
+        if (i % 2 == 0) {
+            printf(" │         ( > <   ) o             │\n");
+        }
+        else {
+            printf(" │         ( > <   )  o            │\n");
+        }
+        printf(" │         (  u u  )               │\n");
+        printf(" └─────────────────────────────────┘\n");
         Sleep(800);
     }
 
     intro();
-    printf("      !! 뜨거운 물을 내려요 !! \n"); // Pouring hot water!!
-    printf("         /\\___/\\   ♨♨♨\n");
-    printf("        (  - w - )  | |\n");
-    printf("        (  u   u )  |_|\n");
+    printf(" ┌─────────────────────────────────┐\n");
+    printf(" │    !! 뜨거운 물을 내려요 !!     │\n"); // Pouring hot water!!
+    printf(" │          /\\___/\\   ♨♨♨       │\n");
+    printf(" │         (  - w - )  | |         │\n");
+    printf(" │         (  u   u )  |_|         │\n");
+    printf(" └─────────────────────────────────┘\n");
     Sleep(1500);
 
-    printf("\n      * 아메리카노 완성! >_< *\n"); // Americano Complete!
-    printf("            (    )       \n");
-    printf("            |____|       \n");
+    intro();
+    printf(" ┌─────────────────────────────────┐\n");
+    printf(" │    * 아메리카노 완성! >_< *     │\n"); // Americano Complete!
+    printf(" │              (    )             │\n");
+    printf(" │              |____|             │\n");
+    printf(" │      우욱.. 써.. (Ugh.. bitter) │\n");
+    printf(" └─────────────────────────────────┘\n");
     Sleep(3000);
 } // 우욱.. 써..
 // Ugh... so bitter...
@@ -100,30 +106,26 @@ void americano() {
 
 // 라떼 연출! (우유 거품 만들기!) [ Latte Animation! (Making milk foam!) ]
 void latte() {
-    intro();
-    printf("    ~~ 원두는 이미 다 갈았다냥! ~~ \n"); // Beans are already ground!
-    Sleep(1500);
-
     for (int i = 0; i <= 3; i++) {
         intro();
-        printf("    [ 우유 스팀 중... 보글보글 ]\n"); // Steaming milk... (Bubble bubble)
-        printf("         /\\___/\\   ~~ \n");
-        printf("        (  ' w ' )  ∫ \n");
-        printf("        (  u   u )  |_| \n");
-        Sleep(1000);
-
-        intro();
-        printf("    [ 우유 스팀 중... 몽글몽글 ]\n"); // Steaming milk... (Fluffy bubbles)
-        printf("         /\\___/\\  ~~~~ \n");
-        printf("        (  ^ w ^ )  ∫ \n");
-        printf("        (  u   u )  |_| \n");
+        printf(" ┌─────────────────────────────────┐\n");
+        if (i == 0) printf(" │  ~~ 원두는 이미 다 갈았다냥! ~~ │\n"); // Beans are already ground!
+        else printf(" │    [ 우유 스팀 중... 보글보글 ] │\n"); // Steaming milk...
+        printf(" │          /\\___/\\   ~~           │\n");
+        if (i % 2 == 0) printf(" │         (  ' w ' )  ∫          │\n");
+        else printf(" │         (  ^ w ^ )  ∫          │\n");
+        printf(" │         (  u   u )  |_|         │\n");
+        printf(" └─────────────────────────────────┘\n");
         Sleep(1000);
     }
 
     intro();
-    printf("\n    <3 카페라떼 완성! 아트도 그렸다냥! <3 \n"); // Latte Complete with Art!
-    printf("            ( ♥  )       \n");
-    printf("            |____|       \n");
+    printf(" ┌─────────────────────────────────┐\n");
+    printf(" │ <3 카페라떼 완성! 아트도 완료!<3│\n"); // Latte Complete with Art!
+    printf(" │              ( ♥  )            │\n");
+    printf(" │              |____|             │\n");
+    printf(" │      창밖 눈 구경 중...(Snowing)│\n");
+    printf(" └─────────────────────────────────┘\n");
     Sleep(3000);
 } // 따뜻한 라떼 한잔들구 눈오는 날 창밖 바라보기!!
 // Watching the snow outside with a warm cup of latte!!
@@ -132,29 +134,33 @@ void latte() {
 // 모카 연출! (초코 휘젓기!) [ Mocha Animation! (Stirring chocolate!) ]
 void mocha() {
     intro();
-    printf("      -- 달콤한 초코 투하! -- \n"); // Dropping sweet chocolate!
+    printf(" ┌─────────────────────────────────┐\n");
+    printf(" │      -- 달콤한 초코 투하! --    │\n"); // Dropping sweet chocolate!
+    printf(" │          /\\___/\\                │\n");
+    printf(" │         (  ㅇ-ㅇ )  ♥          │\n");
+    printf(" │         (  u   u )              │\n");
+    printf(" └─────────────────────────────────┘\n");
     Sleep(1500);
 
     for (int i = 0; i <= 3; i++) {
         intro();
-        printf("      [ 초코 섞는 중! 휘휘~ ]\n"); // Stirring chocolate!
-        printf("         /\\___/\\   \n");
-        printf("        (  ㅇ-ㅇ )  / \n");
-        printf("        (  u   u ) |_| \n");
-        Sleep(1000);
-
-        intro();
-        printf("      [ 초코 섞는 중! 냥냥~ ]\n"); // Stirring chocolate! (Nya-nya!)
-        printf("         /\\___/\\   \n");
-        printf("        (  ㅇ-ㅇ )  \\ \n");
-        printf("        (  u   u ) |_| \n");
+        printf(" ┌─────────────────────────────────┐\n");
+        printf(" │      [ 초코 섞는 중! 휘휘~ ]    │\n"); // Stirring chocolate!
+        printf(" │          /\\___/\\                │\n");
+        if (i % 2 == 0) printf(" │         (  ㅇ-ㅇ )  /           │\n");
+        else printf(" │         (  ㅇ-ㅇ )  \\           │\n");
+        printf(" │         (  u   u ) |_|          │\n");
+        printf(" └─────────────────────────────────┘\n");
         Sleep(1000);
     }
 
     intro();
-    printf("\n    * 카페모카 완성! 당충전 완료! >_< * \n"); // Mocha Complete! Sugar rush!
-    printf("            ( @  )       \n");
-    printf("            |____|       \n");
+    printf(" ┌─────────────────────────────────┐\n");
+    printf(" │ * 카페모카 완성! 당충전 완료! * │\n"); // Mocha Complete! Sugar rush!
+    printf(" │              ( @  )             │\n");
+    printf(" │              |____|             │\n");
+    printf(" │        맛있겠다!! (Yummy!!)     │\n");
+    printf(" └─────────────────────────────────┘\n");
     Sleep(3000);
 } // 맛있겠다!!
 // Looks delicious!!
@@ -202,8 +208,8 @@ void ment() {
         printf(" ┌─────────────────────────────────┐\n");
         printf(" │         사장님 반응 선택        │\n");
         printf(" ├─────────────────────────────────┤\n");
-        printf(" │  1. 사장님 너무너무 이쁘세용!!  │\n");    // Owner, you're so pretty!! (Meow, really?!)
-        printf(" │  2. 사장님 너무너무 귀여워용!!  │\n"); // Owner, you're so cute!! (Stop it, I'm blushing!)
+        printf(" │  1. 사장님 너무너무 이쁘세용!!  │\n");    // Owner, you're so pretty!!
+        printf(" │  2. 사장님 너무너무 귀여워용!!  │\n"); // Owner, you're so cute!!
         printf(" ├─────────────────────────────────┤\n");
         printf(" │  0. 돌아가기                    │\n");     // Go back
         printf(" └─────────────────────────────────┘\n\n");
@@ -215,39 +221,37 @@ void ment() {
         int shake = rand() % 6 + 5;
 
         for (int i = 0; i < shake; i++) {
-
             system("cls");
+            intro(); // 간판을 유지하면서 박스 연출!
+            printf(" ┌─────────────────────────────────┐\n");
 
             if (select == 1) {
-                printf("           /\\___/\\   \n");
-                printf("          ( > _ o )  [ > _ < 꺄아아아아아아아앙!!! 고맙다냥!!] \n"); // Kkyaaaaaaaa!! Thanks nya!! (Happy kitty!)
-                printf("           |     |   \n");
+                if (i % 2 == 0) {
+                    printf(" │        /\\___/\\                  │\n");
+                    printf(" │       ( > _ o )  고맙다냥!!     │\n");
+                }
+                else {
+                    printf(" │        /\\___/\\                  │\n");
+                    printf(" │       ( o _ < )  꺄아아아앙!!   │\n");
+                }
             }
             else if (select == 2) {
-                printf("           /\\___/\\   \n");
-                printf("          ( ^ o = )  [ > _ < 꺄아아아아아아아앙!!!부끄럽다냥!!] \n"); // Kkyaaaaaaaa!! I'm so shy nya!! (Blushing kitty!)
-                printf("           |     |   \n");
+                if (i % 2 == 0) {
+                    printf(" │        /\\___/\\                  │\n");
+                    printf(" │       ( ^ o = )  부끄럽다냥!!   │\n");
+                }
+                else {
+                    printf(" │        /\\___/\\                  │\n");
+                    printf(" │       ( = o ^ )  에헤헤헤냥!!   │\n");
+                }
             }
+            printf(" │       |       |                 │\n");
+            printf(" └─────────────────────────────────┘\n");
 
-            Sleep(200);
-            system("cls");
-
-            if (select == 1) {
-                printf("           /\\___/\\   \n");
-                printf("          ( o _ < )  [ > _ < 꺄아아아아아아아앙!!! 고맙다냥!!] \n"); // Kkyaaaaaaaa!! Thanks nya!! (Happy kitty!)
-                printf("           |     |   \n");
-            }
-            else if (select == 2) {
-                printf("           /\\___/\\   \n");
-                printf("          ( = o ^ )  [ > _ < 꺄아아아아아아아앙!!!부끄럽다냥!!] \n"); // Kkyaaaaaaaa!! I'm so shy nya!! (Blushing kitty!)
-                printf("           |     |   \n");
-            }
-            Sleep(200);
+            Sleep(250);
         }
     }
 }
-
-
 
 // 사장님 쓰다듬어주깅!!
 // [Petting the owner] Giving some love to the fluffy boss!
@@ -255,20 +259,29 @@ void toktok() {
     int count = rand() % 10 + 5;
 
     for (int i = 0; i < count; i++) {
-        // 흔들흔들 모션연출
-        // [Petting motion animation] Swaying back and forth with joy!
         system("cls");
-        printf("           /\\___/\\   \n");
-        printf("          ( - . - )  쓰담쓰담 >_< \n"); // Pat pat (So soft!)
-        printf("           (     )   \n");
-        Sleep(200);
-        system("cls");
-        printf("             /\\___/\\   \n");
-        printf("            ( ^ . ^ )   쓰담쓰담 >_< \n"); // Pat pat (I'm in heaven!)
-        printf("             (     )   \n");
+        intro();
+        printf(" ┌─────────────────────────────────┐\n");
+        if (i % 2 == 0) {
+            printf(" │        /\\___/\\                  │\n");
+            printf(" │       ( - . - )   쓰담쓰담 >_<  │\n");
+            printf(" │        (     )                  │\n");
+        }
+        else {
+            printf(" │          /\\___/\\                │\n");
+            printf(" │         ( ^ . ^ )  쓰담쓰담 >_< │\n");
+            printf(" │          (     )                │\n");
+        }
+        printf(" └─────────────────────────────────┘\n");
         Sleep(200);
     }
-    printf("\n  -- 사장님이 골골송을 부르고 있다냥! 갸르릉~ --\n");
+
+    system("cls");
+    intro();
+    printf(" ┌─────────────────────────────────┐\n");
+    printf(" │  사장님이 골골송을 부른다냥!    │\n");
+    printf(" │         ~ 갸르릉 갸르릉 ~       │\n");
+    printf(" └─────────────────────────────────┘\n");
     // The owner is purring! (Happy kitty, happy life!)
     Sleep(2000);
 }
