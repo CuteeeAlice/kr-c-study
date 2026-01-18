@@ -7,7 +7,6 @@
 // [Cute kitty cafe signboard] Welcome to the fluffiest cafe ever!
 void intro() {
     system("cls");
-    // 하단 박스 가로 길이에 맞춘 가이드 라인과 정중앙 고양이!
     printf(" ┌─────────────────────────────────┐\n");
     printf(" │            /\\_____/\\            │\n");
     printf(" │           (  o w o  )           │\n");
