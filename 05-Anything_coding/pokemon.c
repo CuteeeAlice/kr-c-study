@@ -93,6 +93,45 @@ void f_doctor() {
         printf("그건 할 수 없어!\n"); // Invalid choice
         break;
     }
+		//if (choice == 1) {
+	//	printf("오! 파이리를 골랐군.. 훌룡한 포켓몬이지\n");
+	//	Sleep(1000);
+	//	printf("자 여기 몬스터볼을 가져가게나!\n");
+	//	Sleep(1000);
+	//	poke[0] = 1; // 파이리 id코드 1번
+	//	printf("파이리를 얻었다!\n");
+	//	Sleep(1000);
+	//}
+	//else if (choice == 2) {
+	//	printf("오! 꼬부기를 골랐군.. 훌룡한 포켓몬이지\n");
+	//	Sleep(1000);
+	//	printf("자 여기 몬스터볼을 가져가게나!\n");
+	//	Sleep(1000);
+	//	poke[0] = 4;
+	//	printf("꼬부기를 얻었다!\n");
+	//	Sleep(1000);
+	//}
+	//else if (choice == 3) {
+	//	printf("오! 이상해씨를 골랐군.. 훌룡한 포켓몬이지\n");
+	//	Sleep(1000);
+	//	printf("자 여기 몬스터볼을 가져가게나!\n");
+	//	Sleep(1000);
+	//	poke[0] = 7;
+	//	printf("이상해씨를 얻었다!\n");
+	//	Sleep(1000);
+	//}
+}
+
+/* 나중에 사용할 예정
+void doctoc_second(){
+	printf("%s군! 모험은 잘 하고 있는건가?\n");
+}
+
+void doctor_third() {
+	printf("%s군! 이걸 받아가게나!");
+}
+*/
+// 오박사 변수모음 끝
 }
 // 오박사 변수모음 끝 (Professor Oak related functions end)
 
