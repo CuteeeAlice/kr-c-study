@@ -8,6 +8,7 @@ So I asked GPT whether it was possible to structure one project using multiple s
 
 Compared to the cafe, the other areas don’t have as much detail yet! ㅠㅠ 🥲
 I’m planning to slowly update and improve them little by little whenever I get new ideas. ✨🔧
+2026. 01. 25 comment.
 
 
 CCC(CUTE CAT CAFE) 시뮬레이터로 시작되서 의도치않게 세계관이 확장되어버렸어요...!! 
@@ -22,3 +23,4 @@ CCC(CUTE CAT CAFE) 시뮬레이터로 시작되서 의도치않게 세계관이 
 근데 카페랑은 다르게 아직 다른 부분은 디테일하게 신경을 쓰지는 못했어요!ㅠㅠ 
 
 이 부분은 생각날때마다 조금씩 업데이트 해나갈 예정입니다!
+2026. 01. 25 작성
